@@ -92,7 +92,7 @@ def process_devicelist_cb(data, url, status, response, err):
                 w.prnt("", "---\n%s" % device["deviceName"])
             else:
                 w.prnt("", "---\nUnnamed")
-            w.prnt("", "%s" % device["id"])
+            w.prnt("", "%s" % device["deviceId"])
     except KeyError:
         w.prnt("", "[weejoin] Error accessing device list: %s" % response)
         return w.WEECHAT_RC_ERROR
